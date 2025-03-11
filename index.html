@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+
+    <h1>Formulário de Cadastro</h1>
+    <form action="#" method="post">
+        <label>Data:</label>
+        <input type="date" name="data" required>
+        <br>
+
+        <h2>Dados de Acesso</h2>
+        <label>Usuário:</label>
+        <input type="text" name="usuario" required>
+        <br>
+
+        <label>Senha:</label>
+        <input type="password" name="senha" required>
+        <br>
+
+        <h2>Dados Pessoais</h2>
+        <label>Nome:</label>
+        <input type="text" name="nome" required>
+        <br>
+
+        <label>Endereço:</label>
+        <input type="text" name="endereco" required>
+        <br>
+
+        <label>Número:</label>
+        <input type="text" name="numero" required>
+        <br>
+
+        <label>Complemento:</label>
+        <input type="text" name="complemento">
+        <br>
+
+        <label>Cidade:</label>
+        <input list="cidades" name="cidade" required>
+        <datalist id="cidades">
+            <option value="São Paulo">
+            <option value="Rio de Janeiro">
+            <option value="Belo Horizonte">
+            <option value="Curitiba">
+            <option value="Porto Alegre">
+        </datalist>
+        <br>
+
+        <label>Estado:</label>
+        <select name="estado" required>
+            <option value="">Selecione</option>
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PR">Paraná</option>
+            <option value="RS">Rio Grande do Sul</option>
+        </select>
+        <br>
+
+        <label>CEP:</label>
+        <input type="text" name="cep" required>
+        <br>
+
+        <h2>Gênero:</h2>
+        <label><input type="radio" name="genero" value="masculino" required> Masculino</label>
+        <label><input type="radio" name="genero" value="feminino"> Feminino</label>
+        <label><input type="radio" name="genero" value="prefiro_nao_falar"> Prefiro não falar</label>
+        <br>
+
+        <h2>Curso:</h2>
+        <label><input type="checkbox" name="curso" value="ads"> ADS</label>
+        <label><input type="checkbox" name="curso" value="jogos"> Jogos</label>
+        <label><input type="checkbox" name="curso" value="gestao_ti"> Gestão de TI</label>
+        <label><input type="checkbox" name="curso" value="banco_dados"> Banco de Dados</label>
+        <br>
+
+        <h2>Modelo:</h2>
+        <label><input type="radio" name="modelo" value="presencial" required> Presencial</label>
+        <label><input type="radio" name="modelo" value="ead"> EAD</label>
+        <label><input type="radio" name="modelo" value="semi_presencial"> Semi presencial</label>
+        <br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>
